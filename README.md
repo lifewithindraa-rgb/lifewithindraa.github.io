@@ -73,4 +73,4 @@ github-pages/
 
 ## License
 
-© 2024 Life With Indraa. All rights reserved.
+© 2026 Life With Indraa. All rights reserved.
