@@ -71,15 +71,18 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
-            <div class="px-4 py-4 space-y-3">
-                <a href="index.html" class="block text-white hover:text-azure transition py-2" data-i18n="nav_home">Home</a>
-                <a href="about.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_about">About</a>
-                <a href="property.html" class="block text-grey hover:text-white transition py-2">Property</a>
-                <a href="services.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_services">Services</a>
-                <a href="portfolio.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_portfolio">Portfolio</a>
-                <a href="resources.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_resources">Resources</a>
-                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
-                <a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="block bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium text-center mt-4" data-i18n="nav_youtube">YouTube</a>
+            <div class="px-4 py-4 space-y-1 relative">
+                <button id="mobile-menu-close" class="absolute top-3 right-4 text-grey hover:text-white"><i data-lucide="x" class="w-6 h-6"></i></button>
+                <a href="index.html" class="flex items-center gap-3 text-white hover:text-azure transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="home" class="w-5 h-5"></i><span data-i18n="nav_home">Home</span></a>
+                <a href="about.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="user" class="w-5 h-5"></i><span data-i18n="nav_about">About</span></a>
+                <a href="property.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="building" class="w-5 h-5"></i><span>Property</span></a>
+                <a href="services.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="briefcase" class="w-5 h-5"></i><span data-i18n="nav_services">Services</span></a>
+                <a href="portfolio.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="folder" class="w-5 h-5"></i><span data-i18n="nav_portfolio">Portfolio</span></a>
+                <a href="resources.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="download" class="w-5 h-5"></i><span data-i18n="nav_resources">Resources</span></a>
+                <a href="contact.html" class="flex items-center gap-3 text-grey hover:text-white transition py-2.5 px-3 rounded-lg hover:bg-white/5"><i data-lucide="mail" class="w-5 h-5"></i><span data-i18n="nav_contact">Contact</span></a>
+                <div class="border-t border-white/5 mt-3 pt-3">
+                    <a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="flex items-center gap-3 bg-red-600 hover:bg-red-700 px-4 py-2.5 rounded-lg transition font-medium text-center"><i data-lucide="youtube" class="w-5 h-5"></i><span data-i18n="nav_youtube">YouTube</span></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -94,7 +97,7 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <p class="text-azure font-medium mb-4 tracking-wide" data-i18n="hero_greeting">Hello, I'm</p>
-                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold mb-6">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-6">
                         <span class="text-white">Kang Indra</span>
                     </h1>
                     <div class="flex flex-wrap gap-3 mb-6">
@@ -426,7 +429,7 @@
     <!-- Footer -->
     <footer class="py-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3>
                     <p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p>
@@ -452,11 +455,11 @@
                 </div>
                 <div>
                     <h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4>
-                    <div class="flex gap-4">
-                        <a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a>
-                        <a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                        <a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        <a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a>
                     </div>
                 </div>
             </div>
@@ -467,17 +470,23 @@
         </div>
     </footer>
 
+    <a href="#" id="back-to-top" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-azure hover:bg-azure-dark rounded-full flex items-center justify-center transition shadow-lg opacity-0 pointer-events-none"><i data-lucide="chevron-up" class="w-6 h-6"></i></a>
     <script src="assets/js/translations.js"></script>
     <script>
         lucide.createIcons();
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
         mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenuClose.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) { navbar.classList.add('bg-navy/95'); navbar.classList.remove('bg-navy/80'); }
             else { navbar.classList.add('bg-navy/80'); navbar.classList.remove('bg-navy/95'); }
+            const backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 500) { backToTop.classList.remove('opacity-0', 'pointer-events-none'); backToTop.classList.add('opacity-100'); }
+            else { backToTop.classList.add('opacity-0', 'pointer-events-none'); backToTop.classList.remove('opacity-100'); }
         });
     </script>
 </body>
