@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property | Kost Dekat Telkom University | Life With Indraa</title>
+    <meta name="description" content="Kost Putra & Putri dekat Telkom University Bandung. Ciganitri & Sukabirus. Rp35 Juta/Tahun. Lingkungan nyaman & aman.">
+    <meta name="keywords" content="Kost Bandung, Kost Telkom University, Kost TelU, Kost Mahasiswa, Ciganitri, Sukabirus, Sewa Kost Bandung">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B1220', light: '#1E293B', lighter: '#334155' },
+                        azure: { DEFAULT: '#2563EB', light: '#3B82F6', dark: '#1D4ED8' },
+                        success: '#22C55E',
+                        grey: '#94A3B8',
+                        peach: '#F97316',
+                        rose: '#F43F5E'
+                    },
+                    fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #22C55E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); }
+        .hero-gradient { background: linear-gradient(135deg, #0B1220 0%, #1E293B 50%, #0B1220 100%); }
+        .card-putra { border-left: 4px solid #2563EB; }
+        .card-putri { border-left: 4px solid #F43F5E; }
+        .badge-putra { background: rgba(37, 99, 235, 0.15); color: #60A5FA; }
+        .badge-putri { background: rgba(244, 63, 94, 0.15); color: #FB7185; }
+    </style>
+</head>
+<body class="bg-navy text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-navy/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-xl font-heading font-bold gradient-text">Life With Indraa</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-grey hover:text-white transition" data-i18n="nav_home">Home</a>
+                    <a href="about.html" class="text-grey hover:text-white transition" data-i18n="nav_about">About</a>
+                    <a href="property.html" class="text-white hover:text-azure transition font-medium">Property</a>
+                    <a href="services.html" class="text-grey hover:text-white transition" data-i18n="nav_services">Services</a>
+                    <a href="portfolio.html" class="text-grey hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a>
+                    <a href="resources.html" class="text-grey hover:text-white transition" data-i18n="nav_resources">Resources</a>
+                    <a href="contact.html" class="text-grey hover:text-white transition" data-i18n="nav_contact">Contact</a>
+                    <a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium" data-i18n="nav_youtube">YouTube</a>
+                    <button id="lang-switch" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                </div>
+                <div class="flex items-center gap-2 md:hidden">
+                    <button id="lang-switch-mobile" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                    <button id="mobile-menu-btn" class="text-grey hover:text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_about">About</a>
+                <a href="property.html" class="block text-white hover:text-azure transition py-2 font-medium">Property</a>
+                <a href="services.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_services">Services</a>
+                <a href="portfolio.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="resources.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_resources">Resources</a>
+                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 hero-gradient relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-azure rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-success rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8">
+                <p class="text-azure font-medium mb-4 tracking-wide">🏠 Property</p>
+                <h1 class="text-5xl sm:text-6xl font-heading font-bold mb-6">Kost <span class="gradient-text">Dekat Telkom University</span></h1>
+                <p class="text-grey text-xl max-w-3xl mx-auto mb-4">Kost Putra & Putri strategis di Bandung, cocok untuk mahasiswa Telkom University.</p>
+                <div class="flex flex-wrap justify-center gap-3 mt-6">
+                    <span class="px-4 py-2 rounded-full text-sm font-medium badge-putra">👨 Kost Putra</span>
+                    <span class="px-4 py-2 rounded-full text-sm font-medium badge-putri">👩 Kost Putri</span>
+                    <span class="px-4 py-2 rounded-full text-sm font-medium bg-success/15 text-success">💰 Rp35 Juta/Tahun</span>
+                    <span class="px-4 py-2 rounded-full text-sm font-medium bg-peach/15 text-peach">🎓 Dekat TelU</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kost Putra Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Info Card -->
+                <div class="bg-navy-light border border-white/5 rounded-2xl p-8 card-hover card-putra">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold badge-putra">PUTRA</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-success/15 text-success">Rp35.000.000/Tahun</span>
+                    </div>
+                    <h2 class="text-3xl font-heading font-bold mb-2">🏠 Kost Putra — Ciganitri</h2>
+                    <p class="text-grey mb-6 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-azure"></i> Ciganitri, Bandung</p>
+                    <p class="text-grey mb-8">Sedang mencari kost yang nyaman, aman, dan dekat kampus? Kost khusus putra di Ciganitri adalah pilihan tepat untuk mahasiswa Telkom University.</p>
+
+                    <h3 class="font-heading font-bold text-lg mb-4 flex items-center gap-2"><i data-lucide="sparkles" class="w-5 h-5 text-azure"></i> Keunggulan</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Dekat Telkom University (IT Telkom Bandung)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Cocok untuk mahasiswa & karyawan</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Lingkungan nyaman & aman</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Akses mudah ke kampus</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Dekat minimarket, tempat makan, laundry, ATM & fasilitas umum</span></li>
+                    </ul>
+
+                    <a href="https://wa.me/6288279598586?text=Halo%20Kang%20Indraa%2C%20saya%20tertarik%20dengan%20Kost%20Putra%20Ciganitri.%20Bisa%20info%20lebih%20lanjut%3F" target="_blank" class="inline-flex items-center gap-2 bg-success hover:bg-green-600 px-6 py-3 rounded-lg transition font-medium">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Tanya via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Location Details -->
+                <div class="space-y-6">
+                    <div class="bg-navy-light border border-white/5 rounded-2xl p-8">
+                        <h3 class="font-heading font-bold text-xl mb-4 flex items-center gap-2"><i data-lucide="navigation" class="w-5 h-5 text-azure"></i> Lokasi Strategis</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="graduation-cap" class="w-5 h-5 text-azure"></i></div>
+                                <div><p class="font-medium">Telkom University</p><p class="text-grey text-sm">Dekat kampus</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-peach/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="store" class="w-5 h-5 text-peach"></i></div>
+                                <div><p class="font-medium">Minimarket</p><p class="text-grey text-sm">Kebutuhan sehari-hari</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-success/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="utensils" class="w-5 h-5 text-success"></i></div>
+                                <div><p class="font-medium">Tempat Makan</p><p class="text-grey text-sm">Area kuliner</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-purple-500/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="shirt" class="w-5 h-5 text-purple-500"></i></div>
+                                <div><p class="font-medium">Laundry</p><p class="text-grey text-sm">Cucian kiloan</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-azure/20 to-success/20 border border-white/10 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-success"></i>
+                            <h3 class="font-heading font-bold">Hubungi Sekarang</h3>
+                        </div>
+                        <p class="text-grey text-sm mb-4">Tanya info lengkap & jadwal survei langsung.</p>
+                        <a href="https://wa.me/6288279598586?text=Halo%20Kang%20Indraa%2C%20saya%20mau%20tanya%20Kost%20Putra%20Ciganitri.%20Bisa%20jadwal%20survei%3F" target="_blank" class="inline-flex items-center gap-2 bg-success hover:bg-green-600 px-4 py-2 rounded-lg transition font-medium text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-4xl mx-auto px-4"><div class="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div></div>
+
+    <!-- Kost Putri Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Location Details (Putri) -->
+                <div class="space-y-6 order-2 lg:order-1">
+                    <div class="bg-navy-light border border-white/5 rounded-2xl p-8">
+                        <h3 class="font-heading font-bold text-xl mb-4 flex items-center gap-2"><i data-lucide="navigation" class="w-5 h-5 text-rose"></i> Lokasi Strategis</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-azure/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="graduation-cap" class="w-5 h-5 text-azure"></i></div>
+                                <div><p class="font-medium">Telkom University</p><p class="text-grey text-sm">Dekat kampus</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-peach/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="utensils" class="w-5 h-5 text-peach"></i></div>
+                                <div><p class="font-medium">Area Kuliner</p><p class="text-grey text-sm">Dekat tempat makan</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-success/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="store" class="w-5 h-5 text-success"></i></div>
+                                <div><p class="font-medium">Minimarket</p><p class="text-grey text-sm">Kebutuhan sehari-hari</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-purple-500/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="shirt" class="w-5 h-5 text-purple-500"></i></div>
+                                <div><p class="font-medium">Laundry</p><p class="text-grey text-sm">Cucian kiloan</p></div>
+                            </div>
+                            <div class="flex items-center gap-4 p-3 bg-navy rounded-xl">
+                                <div class="w-10 h-10 bg-sky-500/10 rounded-full flex items-center justify-center shrink-0"><i data-lucide="bus" class="w-5 h-5 text-sky-500"></i></div>
+                                <div><p class="font-medium">Transportasi Umum</p><p class="text-grey text-sm">Akses mudah</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-rose/20 to-purple-500/20 border border-white/10 rounded-2xl p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-rose"></i>
+                            <h3 class="font-heading font-bold">Hubungi Sekarang</h3>
+                        </div>
+                        <p class="text-grey text-sm mb-4">Tanya info lengkap & jadwal survei langsung.</p>
+                        <a href="https://wa.me/6288279598586?text=Halo%20Kang%20Indraa%2C%20saya%20mau%20tanya%20Kost%20Putri%20Sukabirus.%20Bisa%20jadwal%20survei%3F" target="_blank" class="inline-flex items-center gap-2 bg-rose hover:bg-rose/80 px-4 py-2 rounded-lg transition font-medium text-sm">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Info Card (Putri) -->
+                <div class="bg-navy-light border border-white/5 rounded-2xl p-8 card-hover card-putri order-1 lg:order-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold badge-putri">PUTRI</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-success/15 text-success">Rp35.000.000/Tahun</span>
+                    </div>
+                    <h2 class="text-3xl font-heading font-bold mb-2">🏠 Kost Putri — Sukabirus</h2>
+                    <p class="text-grey mb-6 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-rose"></i> Sukabirus, Bandung</p>
+                    <p class="text-grey mb-8">Ingin tinggal dekat kampus dengan lingkungan yang nyaman? Kost khusus putri di Sukabirus adalah pilihan ideal untuk mahasiswi Telkom University.</p>
+
+                    <h3 class="font-heading font-bold text-lg mb-4 flex items-center gap-2"><i data-lucide="sparkles" class="w-5 h-5 text-rose"></i> Keunggulan</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Dekat Telkom University (IT Telkom Bandung)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Cocok untuk mahasiswi</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Lingkungan aman & nyaman</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Dekat area kuliner</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Dekat minimarket & laundry</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-success mt-0.5 shrink-0"></i><span class="text-grey">Akses mudah ke transportasi umum</span></li>
+                    </ul>
+
+                    <a href="https://wa.me/6288279598586?text=Halo%20Kang%20Indraa%2C%20saya%20tertarik%20dengan%20Kost%20Putri%20Sukabirus.%20Bisa%20info%20lebih%20lanjut%3F" target="_blank" class="inline-flex items-center gap-2 bg-success hover:bg-green-600 px-6 py-3 rounded-lg transition font-medium">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Tanya via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-navy-light/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Tertarik dengan Salah Satu Kost?</h2>
+            <p class="text-grey text-lg mb-8 max-w-2xl mx-auto">Hubungi sekarang untuk informasi lengkap, harga terbaru, dan jadwal survei langsung ke lokasi.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6288279598586?text=Halo%20Kang%20Indraa%2C%20saya%20ingin%20info%20lengkap%20tentang%20kost%20dekat%20Telkom%20University." target="_blank" class="inline-flex items-center justify-center gap-2 bg-success hover:bg-green-600 px-8 py-4 rounded-lg transition font-medium text-lg">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Sekarang
+                </a>
+                <a href="https://calendly.com/lifewithindraa/30min" target="_blank" class="inline-flex items-center justify-center gap-2 bg-azure hover:bg-azure-dark px-8 py-4 rounded-lg transition font-medium text-lg">
+                    <i data-lucide="calendar" class="w-5 h-5"></i> Jadwalkan Survei
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div><h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3><p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_nav">Navigation</h4><ul class="space-y-2 text-grey text-sm"><li><a href="index.html" class="hover:text-white transition" data-i18n="nav_home">Home</a></li><li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About</a></li><li><a href="property.html" class="hover:text-white transition">Property</a></li><li><a href="services.html" class="hover:text-white transition" data-i18n="nav_services">Services</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_resources">Resources</h4><ul class="space-y-2 text-grey text-sm"><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_templates">Free Templates</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_roadmap">Cloud Roadmap</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_questions">Interview Questions</a></li><li><a href="contact.html" class="hover:text-white transition" data-i18n="footer_contact">Contact</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4><div class="flex gap-4"><a href="https://youtube.com/@lifewithindraa6067" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a><a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a></div></div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-grey text-sm">&copy; 2026 Life With Indraa. <span data-i18n="footer_rights">All rights reserved.</span></p>
+                <p class="text-grey text-sm">Bandung, Indonesia 🇮🇩</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>
