@@ -91,14 +91,14 @@
                 <div>
                     <h2 class="text-3xl font-heading font-bold mb-6" data-i18n="contact_form_title">Send a Message</h2>
                     <p class="text-grey mb-8" data-i18n="contact_form_desc">Fill out the form and I'll get back to you within 24 hours.</p>
-                    <form id="contact-form" class="space-y-6" onsubmit="return sendMail(event)">
+                    <form id="contact-form" class="space-y-6" onsubmit="return sendToWhatsApp(event)">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div><label class="block text-sm font-medium mb-2" data-i18n="contact_name">Name</label><input type="text" id="from_name" name="from_name" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 text-white placeholder-grey focus:outline-none focus:border-azure transition" data-i18n="contact_name_placeholder" placeholder="Your name"></div>
                             <div><label class="block text-sm font-medium mb-2" data-i18n="contact_email_label">Email</label><input type="email" id="from_email" name="from_email" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 text-white placeholder-grey focus:outline-none focus:border-azure transition" placeholder="your@email.com"></div>
                         </div>
                         <div><label class="block text-sm font-medium mb-2" data-i18n="contact_service">Service Interest</label><select id="service" name="service" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-azure transition"><option value="" data-i18n="contact_service_select">Select a service</option><option value="Cloud Consultation" data-i18n="contact_service_cloud">Cloud Consultation</option><option value="Property Services" data-i18n="contact_service_property">Property Services</option><option value="Career Coaching" data-i18n="contact_service_career">Career Coaching</option><option value="Other" data-i18n="contact_service_other">Other</option></select></div>
                         <div><label class="block text-sm font-medium mb-2" data-i18n="contact_message">Message</label><textarea id="message" name="message" rows="5" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 text-white placeholder-grey focus:outline-none focus:border-azure transition resize-none" data-i18n="contact_message_placeholder" placeholder="Tell me about your project or question..."></textarea></div>
-                        <button type="submit" id="submit-btn" class="w-full bg-azure hover:bg-azure-dark px-6 py-4 rounded-lg transition font-medium text-lg flex items-center justify-center gap-2"><i data-lucide="send" class="w-5 h-5"></i><span data-i18n="contact_send">Send Message</span></button>
+                        <button type="submit" id="submit-btn" class="w-full bg-success hover:bg-green-600 px-6 py-4 rounded-lg transition font-medium text-lg flex items-center justify-center gap-2"><i data-lucide="message-circle" class="w-5 h-5"></i><span data-i18n="contact_send">Send via WhatsApp</span></button>
                         <div id="form-status" class="hidden text-center mt-4"></div>
                     </form>
                 </div>
@@ -144,6 +144,27 @@
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('from_name').value.trim();
+            const email = document.getElementById('from_email').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !service || !message) return false;
+
+            const waNumber = '6288279598586';
+            const text = `Hi Kang Indraa! 👋%0A%0A*Nama:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Layanan:* ${encodeURIComponent(service)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
+            const url = `https://wa.me/${waNumber}?text=${text}`;
+            window.open(url, '_blank');
+
+            const status = document.getElementById('form-status');
+            status.classList.remove('hidden');
+            status.innerHTML = '<div class="bg-success/10 border border-success/30 text-success rounded-lg px-4 py-3">✓ Opening WhatsApp... Please send your message there.</div>';
+            document.getElementById('contact-form').reset();
+            return false;
+        }
     </script>
 </body>
 </html>
