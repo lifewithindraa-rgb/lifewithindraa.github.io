@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Life With Indraa</title>
+    <meta name="description" content="Free cloud career resources, templates, and guides by Kang Indra.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B1220', light: '#1E293B', lighter: '#334155' },
+                        azure: { DEFAULT: '#2563EB', light: '#3B82F6', dark: '#1D4ED8' },
+                        success: '#22C55E',
+                        grey: '#94A3B8'
+                    },
+                    fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #22C55E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); }
+    </style>
+</head>
+<body class="bg-navy text-white">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-navy/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2"><span class="text-xl font-heading font-bold gradient-text">Life With Indraa</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-grey hover:text-white transition" data-i18n="nav_home">Home</a>
+                    <a href="about.html" class="text-grey hover:text-white transition" data-i18n="nav_about">About</a>
+                    <a href="services.html" class="text-grey hover:text-white transition" data-i18n="nav_services">Services</a>
+                    <a href="portfolio.html" class="text-grey hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a>
+                    <a href="resources.html" class="text-white hover:text-azure transition font-medium" data-i18n="nav_resources">Resources</a>
+                    <a href="contact.html" class="text-grey hover:text-white transition" data-i18n="nav_contact">Contact</a>
+                    <a href="https://youtube.com/@lifewithindraa" target="_blank" class="bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium" data-i18n="nav_youtube">YouTube</a>
+                    <button id="lang-switch" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                </div>
+                <div class="flex items-center gap-2 md:hidden">
+                    <button id="lang-switch-mobile" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                    <button id="mobile-menu-btn" class="text-grey hover:text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_about">About</a>
+                <a href="services.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_services">Services</a>
+                <a href="portfolio.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="resources.html" class="block text-white hover:text-azure transition py-2" data-i18n="nav_resources">Resources</a>
+                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-azure font-medium mb-4 tracking-wide" data-i18n="resources_page_title">Free Downloads</p>
+            <h1 class="text-5xl sm:text-6xl font-heading font-bold mb-6"><span data-i18n="resources_page_subtitle">Free</span> <span class="gradient-text" data-i18n="resources_page_subtitle2">Resources</span></h1>
+            <p class="text-grey text-xl max-w-3xl" data-i18n="resources_page_desc">Templates, guides, and checklists to help you land your dream cloud role.</p>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-azure/20 to-success/20 border border-white/10 rounded-2xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full mb-4 inline-block" data-i18n="resources_popular">Most Popular</span>
+                        <h2 class="text-3xl font-heading font-bold mb-4" data-i18n="resources_roadmap_title">Cloud Architect Roadmap 2024</h2>
+                        <p class="text-grey mb-6" data-i18n="resources_roadmap_desc">Complete step-by-step guide to becoming a cloud architect.</p>
+                        <ul class="space-y-2 text-grey text-sm mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="resources_roadmap1">12-month learning plan</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="resources_roadmap2">Certification roadmap</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="resources_roadmap3">Project portfolio ideas</span></li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="resources_roadmap4">Salary benchmarks</span></li>
+                        </ul>
+                        <button class="flex items-center gap-2 bg-azure hover:bg-azure-dark px-6 py-3 rounded-lg transition font-medium"><i data-lucide="download" class="w-5 h-5"></i><span data-i18n="res_download">Download Free →</span></button>
+                    </div>
+                    <div class="bg-navy/50 rounded-xl p-8 flex items-center justify-center"><div class="text-center"><i data-lucide="map" class="w-24 h-24 text-azure/30 mx-auto"></i><p class="text-grey/50 text-sm mt-4">PDF • 24 pages</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-navy-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold mb-12"><span data-i18n="resources_all">All</span> <span class="gradient-text" data-i18n="resources_all2">Resources</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-azure/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="file-text" class="w-6 h-6 text-azure"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res1">Cloud Resume Template</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res1_desc">ATS-friendly resume template for cloud architecture roles.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">PDF • 3 pages</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="check-square" class="w-6 h-6 text-success"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res2">Interview Checklist</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res2_desc">Complete preparation checklist for cloud architect interviews.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">PDF • 2 pages</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="help-circle" class="w-6 h-6 text-purple-500"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res3">Top 50 Interview Questions</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res3_desc">Most commonly asked cloud architect interview questions.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">PDF • 12 pages</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="linkedin" class="w-6 h-6 text-orange-500"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res4">LinkedIn Profile Guide</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res4_desc">Step-by-step guide to optimize your LinkedIn profile.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">PDF • 8 pages</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="calculator" class="w-6 h-6 text-red-500"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res5">Salary Calculator</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res5_desc">Interactive spreadsheet to calculate cloud architect salaries.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">XLSX • 1 sheet</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6 card-hover"><div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="book-open" class="w-6 h-6 text-cyan-500"></i></div><h3 class="font-heading font-bold text-lg mb-2" data-i18n="resources_res6">Cloud Glossary</h3><p class="text-grey text-sm mb-4" data-i18n="resources_res6_desc">Comprehensive glossary of cloud computing terms.</p><div class="flex items-center justify-between"><span class="text-grey text-xs">PDF • 6 pages</span><button class="text-azure hover:text-azure-light text-sm font-medium flex items-center gap-1"><i data-lucide="download" class="w-4 h-4"></i> Download</button></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6" data-i18n="resources_newsletter">Get New Resources First</h2>
+            <p class="text-grey text-lg mb-8" data-i18n="resources_newsletter_desc">Join my newsletter to get new templates, guides, and career tips.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-4 py-3 text-white placeholder-grey focus:outline-none focus:border-azure" data-i18n="resources_email_placeholder" placeholder="Enter your email">
+                <button type="submit" class="bg-azure hover:bg-azure-dark px-6 py-3 rounded-lg transition font-medium whitespace-nowrap" data-i18n="resources_subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div><h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3><p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_nav">Navigation</h4><ul class="space-y-2 text-grey text-sm"><li><a href="index.html" class="hover:text-white transition" data-i18n="nav_home">Home</a></li><li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About</a></li><li><a href="services.html" class="hover:text-white transition" data-i18n="nav_services">Services</a></li><li><a href="portfolio.html" class="hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_resources">Resources</h4><ul class="space-y-2 text-grey text-sm"><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_templates">Free Templates</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_roadmap">Cloud Roadmap</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_questions">Interview Questions</a></li><li><a href="contact.html" class="hover:text-white transition" data-i18n="footer_contact">Contact</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4><div class="flex gap-4"><a href="https://youtube.com/@lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a><a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a></div></div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-grey text-sm">&copy; 2024 Life With Indraa. <span data-i18n="footer_rights">All rights reserved.</span></p>
+                <p class="text-grey text-sm">Bandung, Indonesia 🇮🇩</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>

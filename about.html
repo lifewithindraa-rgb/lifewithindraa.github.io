@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Life With Indraa</title>
+    <meta name="description" content="Learn about Kang Indra - Cloud Architect, Property Agent & Entrepreneur with 14 years of experience.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B1220', light: '#1E293B', lighter: '#334155' },
+                        azure: { DEFAULT: '#2563EB', light: '#3B82F6', dark: '#1D4ED8' },
+                        success: '#22C55E',
+                        grey: '#94A3B8'
+                    },
+                    fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #22C55E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); }
+    </style>
+</head>
+<body class="bg-navy text-white">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-navy/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2"><span class="text-xl font-heading font-bold gradient-text">Life With Indraa</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-grey hover:text-white transition" data-i18n="nav_home">Home</a>
+                    <a href="about.html" class="text-white hover:text-azure transition font-medium" data-i18n="nav_about">About</a>
+                    <a href="services.html" class="text-grey hover:text-white transition" data-i18n="nav_services">Services</a>
+                    <a href="portfolio.html" class="text-grey hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a>
+                    <a href="resources.html" class="text-grey hover:text-white transition" data-i18n="nav_resources">Resources</a>
+                    <a href="contact.html" class="text-grey hover:text-white transition" data-i18n="nav_contact">Contact</a>
+                    <a href="https://youtube.com/@lifewithindraa" target="_blank" class="bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium" data-i18n="nav_youtube">YouTube</a>
+                    <button id="lang-switch" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                </div>
+                <div class="flex items-center gap-2 md:hidden">
+                    <button id="lang-switch-mobile" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                    <button id="mobile-menu-btn" class="text-grey hover:text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="block text-white hover:text-azure transition py-2" data-i18n="nav_about">About</a>
+                <a href="services.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_services">Services</a>
+                <a href="portfolio.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="resources.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_resources">Resources</a>
+                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-azure font-medium mb-4 tracking-wide" data-i18n="about_page_title">About Me</p>
+            <h1 class="text-5xl sm:text-6xl font-heading font-bold mb-6">
+                <span data-i18n="about_page_subtitle">From Cloud to</span> <span class="gradient-text" data-i18n="about_page_subtitle2">Entrepreneurship</span>
+            </h1>
+            <p class="text-grey text-xl max-w-3xl" data-i18n="about_page_desc">The story of how a software engineer became a cloud architect, and why I'm now building multiple income streams.</p>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="sticky top-24">
+                    <div class="bg-navy-light border border-white/5 rounded-2xl p-8">
+                        <div class="aspect-square bg-navy rounded-xl overflow-hidden mb-6">
+                            <img src="assets/images/myprofile.png" alt="Kang Indra" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-heading font-bold text-2xl">Kang Indra</h3>
+                            <p class="text-grey">Cloud Architect & Entrepreneur</p>
+                            <p class="text-grey text-sm mt-2">📍 Bandung, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-heading font-bold mb-4" data-i18n="about_hi">Hi, I'm Kang Indra 👋</h2>
+                        <p class="text-grey leading-relaxed mb-4" data-i18n="about_story1">After spending 14 years helping enterprise companies build cloud platforms and digital transformation projects, I'm now documenting my journey of building multiple income streams — from cloud consulting to property and content creation.</p>
+                        <p class="text-grey leading-relaxed" data-i18n="about_story2">This isn't just a website. It's my open diary of building "Life With Indraa" — a personal brand that combines everything I've learned and everything I'm building.</p>
+                    </div>
+                    <div class="bg-navy-light border border-white/5 rounded-xl p-6">
+                        <h3 class="font-heading font-bold text-xl mb-4" data-i18n="about_mission_title">🎯 My Mission</h3>
+                        <p class="text-grey leading-relaxed" data-i18n="about_mission">To help businesses migrate to the cloud efficiently, help families find their dream homes in Bandung, and inspire others to build multiple income streams through honest, practical content.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-xl mb-4" data-i18n="about_believe_title">What I Believe</h3>
+                        <ul class="space-y-4 text-grey">
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-success mt-1 flex-shrink-0"></i><span data-i18n="about_believe1"><strong class="text-white">Multiple income streams</strong> are the path to financial freedom. Never rely on one source.</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-success mt-1 flex-shrink-0"></i><span data-i18n="about_believe2"><strong class="text-white">Cloud skills</strong> are the most valuable technical skills in today's market.</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-success mt-1 flex-shrink-0"></i><span data-i18n="about_believe3"><strong class="text-white">Real estate</strong> in Bandung is one of the best investment opportunities in Indonesia.</span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-success mt-1 flex-shrink-0"></i><span data-i18n="about_believe4"><strong class="text-white">Content creation</strong> is the best way to build authority and share knowledge.</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-xl mb-4" data-i18n="about_building_title">What I'm Building</h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-navy-light border border-white/5 rounded-xl p-4"><i data-lucide="cloud" class="w-6 h-6 text-azure mb-2"></i><h4 class="font-medium" data-i18n="about_building1">Cloud Consulting</h4><p class="text-grey text-sm" data-i18n="about_building1_desc">Helping businesses migrate to cloud</p></div>
+                            <div class="bg-navy-light border border-white/5 rounded-xl p-4"><i data-lucide="home" class="w-6 h-6 text-success mb-2"></i><h4 class="font-medium" data-i18n="about_building2">Property Business</h4><p class="text-grey text-sm" data-i18n="about_building2_desc">Real estate in Bandung area</p></div>
+                            <div class="bg-navy-light border border-white/5 rounded-xl p-4"><i data-lucide="video" class="w-6 h-6 text-red-500 mb-2"></i><h4 class="font-medium" data-i18n="about_building3">YouTube Channel</h4><p class="text-grey text-sm" data-i18n="about_building3_desc">Sharing knowledge and journey</p></div>
+                            <div class="bg-navy-light border border-white/5 rounded-xl p-4"><i data-lucide="linkedin" class="w-6 h-6 text-azure mb-2"></i><h4 class="font-medium" data-i18n="about_building4">LinkedIn Content</h4><p class="text-grey text-sm" data-i18n="about_building4_desc">Professional insights and stories</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-navy-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold mb-12 text-center"><span data-i18n="about_skills">Skills &</span> <span class="gradient-text" data-i18n="about_skills2">Expertise</span></h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-navy border border-white/5 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-azure/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="cloud" class="w-6 h-6 text-azure"></i></div>
+                    <h3 class="font-heading font-bold mb-4">Cloud</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">AWS</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Huawei Cloud</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Terraform</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Kubernetes</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Docker</span>
+                    </div>
+                </div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="git-branch" class="w-6 h-6 text-success"></i></div>
+                    <h3 class="font-heading font-bold mb-4">DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Git</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Jenkins</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Ansible</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Prometheus</span>
+                    </div>
+                </div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="code" class="w-6 h-6 text-purple-500"></i></div>
+                    <h3 class="font-heading font-bold mb-4">Programming</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Python</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Bash</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">YAML</span>
+                    </div>
+                </div>
+                <div class="bg-navy border border-white/5 rounded-xl p-6">
+                    <div class="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4"><i data-lucide="home" class="w-6 h-6 text-orange-500"></i></div>
+                    <h3 class="font-heading font-bold mb-4">Property</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Residential</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Investment</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-sm text-grey">Bandung</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6" data-i18n="about_connect">Let's Connect</h2>
+            <p class="text-grey text-lg mb-8" data-i18n="about_connect_desc">I'm always happy to connect with fellow professionals, potential clients, and anyone on a similar journey.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://calendly.com/lifewithindraa/30min" target="_blank" class="flex items-center gap-2 bg-azure hover:bg-azure-dark px-6 py-3 rounded-lg transition font-medium"><i data-lucide="calendar" class="w-5 h-5"></i><span data-i18n="hero_btn_consult">Book Consultation</span></a>
+                <span class="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg font-medium opacity-50 cursor-not-allowed pointer-events-none"><i data-lucide="linkedin" class="w-5 h-5"></i>LinkedIn - Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div><h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3><p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_nav">Navigation</h4><ul class="space-y-2 text-grey text-sm"><li><a href="index.html" class="hover:text-white transition" data-i18n="nav_home">Home</a></li><li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About</a></li><li><a href="services.html" class="hover:text-white transition" data-i18n="nav_services">Services</a></li><li><a href="portfolio.html" class="hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_resources">Resources</h4><ul class="space-y-2 text-grey text-sm"><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_templates">Free Templates</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_roadmap">Cloud Roadmap</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_questions">Interview Questions</a></li><li><a href="contact.html" class="hover:text-white transition" data-i18n="footer_contact">Contact</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4><div class="flex gap-4"><a href="https://youtube.com/@lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a><a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a></div></div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-grey text-sm">&copy; 2024 Life With Indraa. <span data-i18n="footer_rights">All rights reserved.</span></p>
+                <p class="text-grey text-sm">Bandung, Indonesia 🇮🇩</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>

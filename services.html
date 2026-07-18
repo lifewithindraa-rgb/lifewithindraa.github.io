@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Life With Indraa</title>
+    <meta name="description" content="Cloud consultation, property services, and career coaching by Kang Indra.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B1220', light: '#1E293B', lighter: '#334155' },
+                        azure: { DEFAULT: '#2563EB', light: '#3B82F6', dark: '#1D4ED8' },
+                        success: '#22C55E',
+                        grey: '#94A3B8'
+                    },
+                    fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #22C55E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); }
+    </style>
+</head>
+<body class="bg-navy text-white">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-navy/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2"><span class="text-xl font-heading font-bold gradient-text">Life With Indraa</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-grey hover:text-white transition" data-i18n="nav_home">Home</a>
+                    <a href="about.html" class="text-grey hover:text-white transition" data-i18n="nav_about">About</a>
+                    <a href="services.html" class="text-white hover:text-azure transition font-medium" data-i18n="nav_services">Services</a>
+                    <a href="portfolio.html" class="text-grey hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a>
+                    <a href="resources.html" class="text-grey hover:text-white transition" data-i18n="nav_resources">Resources</a>
+                    <a href="contact.html" class="text-grey hover:text-white transition" data-i18n="nav_contact">Contact</a>
+                    <a href="https://youtube.com/@lifewithindraa" target="_blank" class="bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium" data-i18n="nav_youtube">YouTube</a>
+                    <button id="lang-switch" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                </div>
+                <div class="flex items-center gap-2 md:hidden">
+                    <button id="lang-switch-mobile" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                    <button id="mobile-menu-btn" class="text-grey hover:text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_about">About</a>
+                <a href="services.html" class="block text-white hover:text-azure transition py-2" data-i18n="nav_services">Services</a>
+                <a href="portfolio.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="resources.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_resources">Resources</a>
+                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-azure font-medium mb-4 tracking-wide" data-i18n="svc_page_title">What I Offer</p>
+            <h1 class="text-5xl sm:text-6xl font-heading font-bold mb-6"><span data-i18n="svc_page_subtitle">My</span> <span class="gradient-text" data-i18n="svc_page_subtitle2">Services</span></h1>
+            <p class="text-grey text-xl max-w-3xl" data-i18n="svc_page_desc">Professional expertise across cloud architecture, property, and career coaching. Let's build something great together.</p>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-azure/10 rounded-xl flex items-center justify-center"><i data-lucide="cloud" class="w-6 h-6 text-azure"></i></div>
+                <div><h2 class="text-3xl font-heading font-bold" data-i18n="svc_cloud_page">Cloud Consultation</h2><p class="text-grey" data-i18n="svc_cloud_page_desc">14 years of cloud architecture expertise</p></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <div class="flex items-center gap-3 mb-4"><i data-lucide="upload-cloud" class="w-6 h-6 text-azure"></i><h3 class="font-heading font-bold text-xl" data-i18n="svc_migration">Cloud Migration</h3></div>
+                    <p class="text-grey mb-6" data-i18n="svc_migration_desc">Migrate your on-premise infrastructure to AWS, Huawei Cloud, or multi-cloud environments with minimal downtime.</p>
+                    <ul class="space-y-2 text-grey text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_migration1">Assessment & Planning</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_migration2">Migration Strategy</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_migration3">Execution & Validation</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_migration4">Post-Migration Support</span></li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 15-50M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_project">per project</span></div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <div class="flex items-center gap-3 mb-4"><i data-lucide="layout" class="w-6 h-6 text-azure"></i><h3 class="font-heading font-bold text-xl" data-i18n="svc_arch_review">Architecture Review</h3></div>
+                    <p class="text-grey mb-6" data-i18n="svc_arch_review_desc">Get a comprehensive review of your cloud architecture with actionable recommendations for optimization.</p>
+                    <ul class="space-y-2 text-grey text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_arch1">Architecture Assessment</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_arch2">Security Review</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_arch3">Cost Optimization</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_arch4">Best Practices Report</span></li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 5-15M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_engagement">per engagement</span></div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <div class="flex items-center gap-3 mb-4"><i data-lucide="search" class="w-6 h-6 text-azure"></i><h3 class="font-heading font-bold text-xl" data-i18n="svc_infra">Infrastructure Assessment</h3></div>
+                    <p class="text-grey mb-6" data-i18n="svc_infra_desc">Complete audit of your current infrastructure with a detailed report and improvement roadmap.</p>
+                    <ul class="space-y-2 text-grey text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_infra1">Current State Analysis</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_infra2">Gap Identification</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_infra3">Recommendations</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_infra4">Implementation Roadmap</span></li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 8-20M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_assessment">per assessment</span></div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <div class="flex items-center gap-3 mb-4"><i data-lucide="settings" class="w-6 h-6 text-azure"></i><h3 class="font-heading font-bold text-xl" data-i18n="svc_devops">DevOps Setup</h3></div>
+                    <p class="text-grey mb-6" data-i18n="svc_devops_desc">Set up CI/CD pipelines, infrastructure as code, and monitoring for your cloud environment.</p>
+                    <ul class="space-y-2 text-grey text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_devops1">CI/CD Pipeline</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_devops2">Infrastructure as Code</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_devops3">Monitoring & Alerting</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_devops4">Documentation</span></li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 10-30M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_setup">per setup</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-navy-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center"><i data-lucide="home" class="w-6 h-6 text-success"></i></div>
+                <div><h2 class="text-3xl font-heading font-bold" data-i18n="svc_property_page">Property Services</h2><p class="text-grey" data-i18n="svc_property_page_desc">Your trusted property partner in Bandung</p></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-navy border border-white/5 rounded-xl p-8 card-hover">
+                    <i data-lucide="key" class="w-10 h-10 text-success mb-4"></i>
+                    <h3 class="font-heading font-bold text-xl mb-4" data-i18n="svc_buy">Buy Property</h3>
+                    <p class="text-grey mb-6" data-i18n="svc_buy_desc">Find your dream home or investment property in Bandung. I'll guide you through every step.</p>
+                    <ul class="space-y-2 text-grey text-sm"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_buy1">Property Search</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_buy2">Site Visits</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_buy3">Price Negotiation</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_buy4">Legal Assistance</span></li></ul>
+                </div>
+                <div class="bg-navy border border-white/5 rounded-xl p-8 card-hover">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-success mb-4"></i>
+                    <h3 class="font-heading font-bold text-xl mb-4" data-i18n="svc_sell">Sell Property</h3>
+                    <p class="text-grey mb-6" data-i18n="svc_sell_desc">List your property with me and reach qualified buyers. Professional marketing included.</p>
+                    <ul class="space-y-2 text-grey text-sm"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_sell1">Property Valuation</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_sell2">Marketing Strategy</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_sell3">Buyer Screening</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_sell4">Transaction Support</span></li></ul>
+                </div>
+                <div class="bg-navy border border-white/5 rounded-xl p-8 card-hover">
+                    <i data-lucide="piggy-bank" class="w-10 h-10 text-success mb-4"></i>
+                    <h3 class="font-heading font-bold text-xl mb-4" data-i18n="svc_invest">Investment</h3>
+                    <p class="text-grey mb-6" data-i18n="svc_invest_desc">Strategic property investment advice to build long-term wealth in Bandung's growing market.</p>
+                    <ul class="space-y-2 text-grey text-sm"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_invest1">Market Analysis</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_invest2">ROI Calculation</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_invest3">Portfolio Strategy</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_invest4">Risk Assessment</span></li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center"><i data-lucide="users" class="w-6 h-6 text-purple-500"></i></div>
+                <div><h2 class="text-3xl font-heading font-bold" data-i18n="svc_career_page">Career Coaching</h2><p class="text-grey" data-i18n="svc_career_page_desc">Level up your cloud career</p></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <i data-lucide="mic" class="w-10 h-10 text-purple-500 mb-4"></i>
+                    <h3 class="font-heading font-bold text-xl mb-4" data-i18n="svc_interview">Interview Preparation</h3>
+                    <p class="text-grey mb-6" data-i18n="svc_interview_desc">Mock interviews and coaching to help you ace your cloud architect interviews.</p>
+                    <ul class="space-y-2 text-grey text-sm"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_interview1">Technical Interview Prep</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_interview2">Behavioral Interview Coaching</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_interview3">System Design Practice</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_interview4">Salary Negotiation Tips</span></li></ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 1-3M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_session">per session</span></div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-8 card-hover">
+                    <i data-lucide="file-text" class="w-10 h-10 text-purple-500 mb-4"></i>
+                    <h3 class="font-heading font-bold text-xl mb-4" data-i18n="svc_resume">Resume & LinkedIn</h3>
+                    <p class="text-grey mb-6" data-i18n="svc_resume_desc">Professional resume review and LinkedIn optimization to attract recruiters.</p>
+                    <ul class="space-y-2 text-grey text-sm"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_resume1">Resume Review & Rewrite</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_resume2">LinkedIn Profile Optimization</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_resume3">Portfolio Development</span></li><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-success"></i><span data-i18n="svc_resume4">Personal Brand Strategy</span></li></ul>
+                    <div class="mt-6 pt-6 border-t border-white/5"><span class="text-2xl font-heading font-bold">IDR 500K-1.5M</span><span class="text-grey text-sm ml-2" data-i18n="svc_per_package">per package</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-navy-light/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6" data-i18n="svc_get_started">Ready to Get Started?</h2>
+            <p class="text-grey text-lg mb-8" data-i18n="svc_get_started_desc">Let's discuss how I can help you achieve your goals.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://calendly.com/lifewithindraa/30min" target="_blank" class="flex items-center gap-2 bg-azure hover:bg-azure-dark px-8 py-4 rounded-lg transition font-medium text-lg"><i data-lucide="calendar" class="w-5 h-5"></i><span data-i18n="cta_btn_consult">Book Consultation</span></a>
+                <a href="https://wa.me/6288279598586" target="_blank" class="flex items-center gap-2 bg-success hover:bg-green-600 px-8 py-4 rounded-lg transition font-medium text-lg"><i data-lucide="message-circle" class="w-5 h-5"></i><span data-i18n="cta_btn_whatsapp">WhatsApp Me</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div><h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3><p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_nav">Navigation</h4><ul class="space-y-2 text-grey text-sm"><li><a href="index.html" class="hover:text-white transition" data-i18n="nav_home">Home</a></li><li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About</a></li><li><a href="services.html" class="hover:text-white transition" data-i18n="nav_services">Services</a></li><li><a href="portfolio.html" class="hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_resources">Resources</h4><ul class="space-y-2 text-grey text-sm"><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_templates">Free Templates</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_roadmap">Cloud Roadmap</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_questions">Interview Questions</a></li><li><a href="contact.html" class="hover:text-white transition" data-i18n="footer_contact">Contact</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4><div class="flex gap-4"><a href="https://youtube.com/@lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a><a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a></div></div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-grey text-sm">&copy; 2024 Life With Indraa. <span data-i18n="footer_rights">All rights reserved.</span></p>
+                <p class="text-grey text-sm">Bandung, Indonesia 🇮🇩</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>

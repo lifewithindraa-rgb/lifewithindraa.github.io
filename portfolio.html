@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Life With Indraa</title>
+    <meta name="description" content="Cloud architecture projects and migration experience by Kang Indra.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0B1220', light: '#1E293B', lighter: '#334155' },
+                        azure: { DEFAULT: '#2563EB', light: '#3B82F6', dark: '#1D4ED8' },
+                        success: '#22C55E',
+                        grey: '#94A3B8'
+                    },
+                    fontFamily: { heading: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #22C55E 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .nav-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2); }
+    </style>
+</head>
+<body class="bg-navy text-white">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-navy/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2"><span class="text-xl font-heading font-bold gradient-text">Life With Indraa</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-grey hover:text-white transition" data-i18n="nav_home">Home</a>
+                    <a href="about.html" class="text-grey hover:text-white transition" data-i18n="nav_about">About</a>
+                    <a href="services.html" class="text-grey hover:text-white transition" data-i18n="nav_services">Services</a>
+                    <a href="portfolio.html" class="text-white hover:text-azure transition font-medium" data-i18n="nav_portfolio">Portfolio</a>
+                    <a href="resources.html" class="text-grey hover:text-white transition" data-i18n="nav_resources">Resources</a>
+                    <a href="contact.html" class="text-grey hover:text-white transition" data-i18n="nav_contact">Contact</a>
+                    <a href="https://youtube.com/@lifewithindraa" target="_blank" class="bg-azure hover:bg-azure-dark px-4 py-2 rounded-lg transition font-medium" data-i18n="nav_youtube">YouTube</a>
+                    <button id="lang-switch" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                </div>
+                <div class="flex items-center gap-2 md:hidden">
+                    <button id="lang-switch-mobile" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition font-bold text-sm cursor-pointer">ID</button>
+                    <button id="mobile-menu-btn" class="text-grey hover:text-white"><i data-lucide="menu" class="w-6 h-6"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_about">About</a>
+                <a href="services.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_services">Services</a>
+                <a href="portfolio.html" class="block text-white hover:text-azure transition py-2" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="resources.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_resources">Resources</a>
+                <a href="contact.html" class="block text-grey hover:text-white transition py-2" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-azure font-medium mb-4 tracking-wide" data-i18n="portfolio_page_title">My Work</p>
+            <h1 class="text-5xl sm:text-6xl font-heading font-bold mb-6"><span data-i18n="portfolio_page_subtitle">Cloud</span> <span class="gradient-text" data-i18n="portfolio_page_subtitle2">Portfolio</span></h1>
+            <p class="text-grey text-xl max-w-3xl" data-i18n="portfolio_page_desc">14 years of cloud architecture and migration projects across enterprise companies.</p>
+        </div>
+    </section>
+
+    <section class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-navy-light border border-white/5 rounded-xl p-6 text-center"><p class="text-4xl font-heading font-bold gradient-text">14+</p><p class="text-grey text-sm mt-2" data-i18n="portfolio_years">Years Experience</p></div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-6 text-center"><p class="text-4xl font-heading font-bold gradient-text">50+</p><p class="text-grey text-sm mt-2" data-i18n="portfolio_projects">Projects Completed</p></div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-6 text-center"><p class="text-4xl font-heading font-bold gradient-text">30+</p><p class="text-grey text-sm mt-2" data-i18n="portfolio_migrations">Cloud Migrations</p></div>
+                <div class="bg-navy-light border border-white/5 rounded-xl p-6 text-center"><p class="text-4xl font-heading font-bold gradient-text">100+</p><p class="text-grey text-sm mt-2" data-i18n="portfolio_deployments">Infrastructure Deployments</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold mb-12"><span data-i18n="portfolio_featured">Featured</span> <span class="gradient-text" data-i18n="portfolio_projects2">Projects</span></h2>
+            <div class="space-y-8">
+                <div class="bg-navy-light border border-white/5 rounded-2xl overflow-hidden card-hover">
+                    <div class="grid lg:grid-cols-2">
+                        <div class="aspect-video lg:aspect-auto bg-navy flex items-center justify-center"><div class="text-center p-8"><i data-lucide="server" class="w-20 h-20 text-azure/30 mx-auto"></i></div></div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 bg-azure/10 text-azure text-xs font-medium rounded-full">AWS</span><span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">Terraform</span><span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-xs font-medium rounded-full">Kubernetes</span></div>
+                            <h3 class="font-heading font-bold text-2xl mb-3" data-i18n="portfolio_p1_title">Enterprise Cloud Migration</h3>
+                            <p class="text-grey mb-6" data-i18n="portfolio_p1_desc">Migrated 200+ microservices from on-premise to AWS EKS with zero downtime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-2xl overflow-hidden card-hover">
+                    <div class="grid lg:grid-cols-2">
+                        <div class="aspect-video lg:aspect-auto bg-navy flex items-center justify-center order-2 lg:order-1"><div class="text-center p-8"><i data-lucide="database" class="w-20 h-20 text-success/30 mx-auto"></i></div></div>
+                        <div class="p-8 order-1 lg:order-2">
+                            <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 bg-orange-500/10 text-orange-500 text-xs font-medium rounded-full">Huawei Cloud</span><span class="px-3 py-1 bg-azure/10 text-azure text-xs font-medium rounded-full">Ansible</span></div>
+                            <h3 class="font-heading font-bold text-2xl mb-3" data-i18n="portfolio_p2_title">Multi-Cloud Infrastructure</h3>
+                            <p class="text-grey mb-6" data-i18n="portfolio_p2_desc">Designed and implemented a multi-cloud strategy across Huawei Cloud and AWS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navy-light border border-white/5 rounded-2xl overflow-hidden card-hover">
+                    <div class="grid lg:grid-cols-2">
+                        <div class="aspect-video lg:aspect-auto bg-navy flex items-center justify-center"><div class="text-center p-8"><i data-lucide="shield" class="w-20 h-20 text-purple-500/30 mx-auto"></i></div></div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4"><span class="px-3 py-1 bg-azure/10 text-azure text-xs font-medium rounded-full">AWS</span><span class="px-3 py-1 bg-red-500/10 text-red-500 text-xs font-medium rounded-full">Security</span></div>
+                            <h3 class="font-heading font-bold text-2xl mb-3" data-i18n="portfolio_p3_title">Cloud Security Framework</h3>
+                            <p class="text-grey mb-6" data-i18n="portfolio_p3_desc">Built a comprehensive cloud security framework for a financial services company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-navy-light/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold mb-12 text-center"><span data-i18n="portfolio_patterns">Architecture</span> <span class="gradient-text" data-i18n="portfolio_patterns2">Patterns</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-navy border border-white/5 rounded-xl p-8 text-center card-hover"><i data-lucide="git-branch" class="w-12 h-12 text-azure mx-auto mb-4"></i><h3 class="font-heading font-bold text-lg mb-2" data-i18n="portfolio_pattern1">Microservices on K8s</h3><p class="text-grey text-sm" data-i18n="portfolio_pattern1_desc">EKS/GKE cluster with service mesh, auto-scaling, and rolling deployments.</p></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-8 text-center card-hover"><i data-lucide="workflow" class="w-12 h-12 text-success mx-auto mb-4"></i><h3 class="font-heading font-bold text-lg mb-2" data-i18n="portfolio_pattern2">CI/CD Pipeline</h3><p class="text-grey text-sm" data-i18n="portfolio_pattern2_desc">GitOps with ArgoCD, GitHub Actions, and automated testing.</p></div>
+                <div class="bg-navy border border-white/5 rounded-xl p-8 text-center card-hover"><i data-lucide="layers" class="w-12 h-12 text-purple-500 mx-auto mb-4"></i><h3 class="font-heading font-bold text-lg mb-2" data-i18n="portfolio_pattern3">Multi-Cloud DR</h3><p class="text-grey text-sm" data-i18n="portfolio_pattern3_desc">Active-passive DR across AWS and Huawei Cloud with automated failover.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6" data-i18n="portfolio_cta">Need Similar Solutions?</h2>
+            <p class="text-grey text-lg mb-8" data-i18n="portfolio_cta_desc">Let me help you design and implement cloud architecture for your business.</p>
+            <a href="https://calendly.com/lifewithindraa/30min" target="_blank" class="inline-flex items-center gap-2 bg-azure hover:bg-azure-dark px-8 py-4 rounded-lg transition font-medium text-lg"><i data-lucide="calendar" class="w-5 h-5"></i><span data-i18n="cta_btn_consult">Book Consultation</span></a>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div><h3 class="font-heading font-bold text-xl gradient-text mb-4">Life With Indraa</h3><p class="text-grey text-sm" data-i18n="footer_desc">Building multiple income streams while helping businesses migrate to the cloud.</p></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_nav">Navigation</h4><ul class="space-y-2 text-grey text-sm"><li><a href="index.html" class="hover:text-white transition" data-i18n="nav_home">Home</a></li><li><a href="about.html" class="hover:text-white transition" data-i18n="nav_about">About</a></li><li><a href="services.html" class="hover:text-white transition" data-i18n="nav_services">Services</a></li><li><a href="portfolio.html" class="hover:text-white transition" data-i18n="nav_portfolio">Portfolio</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_resources">Resources</h4><ul class="space-y-2 text-grey text-sm"><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_templates">Free Templates</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_roadmap">Cloud Roadmap</a></li><li><a href="resources.html" class="hover:text-white transition" data-i18n="footer_questions">Interview Questions</a></li><li><a href="contact.html" class="hover:text-white transition" data-i18n="footer_contact">Contact</a></li></ul></div>
+                <div><h4 class="font-heading font-bold mb-4" data-i18n="footer_connect">Connect</h4><div class="flex gap-4"><a href="https://youtube.com/@lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-red-600 rounded-lg flex items-center justify-center transition"><i data-lucide="youtube" class="w-5 h-5"></i></a><a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-azure rounded-lg flex items-center justify-center transition opacity-50 pointer-events-none" title="LinkedIn - Coming Soon"><i data-lucide="linkedin" class="w-5 h-5"></i></a><a href="https://instagram.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-pink-600 rounded-lg flex items-center justify-center transition"><i data-lucide="instagram" class="w-5 h-5"></i></a><a href="https://github.com/lifewithindraa" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-lg flex items-center justify-center transition"><i data-lucide="github" class="w-5 h-5"></i></a></div></div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-grey text-sm">&copy; 2024 Life With Indraa. <span data-i18n="footer_rights">All rights reserved.</span></p>
+                <p class="text-grey text-sm">Bandung, Indonesia 🇮🇩</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/translations.js"></script>
+    <script>
+        lucide.createIcons();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    </script>
+</body>
+</html>
